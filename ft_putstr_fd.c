@@ -6,7 +6,7 @@
 /*   By: ljunzhen <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/07 07:11:04 by ljunzhen          #+#    #+#             */
-/*   Updated: 2018/05/07 07:13:28 by ljunzhen         ###   ########.fr       */
+/*   Updated: 2018/05/17 05:57:06 by ljunzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,4 +16,3 @@ void	ft_putstr_fd(char const *s, int fd)
 {
 	write(fd, s, ft_strlen(s));
 }
-

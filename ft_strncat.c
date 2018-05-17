@@ -6,20 +6,20 @@
 /*   By: ljunzhen <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/02 01:15:34 by ljunzhen          #+#    #+#             */
-/*   Updated: 2018/05/04 00:28:32 by ljunzhen         ###   ########.fr       */
+/*   Updated: 2018/05/17 06:32:41 by ljunzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strncat(char *s1, const char *s2, size_t n)
+char	*ft_strncat(char *s1, const char *s2, size_t n)
 {
 	int x;
 	int i;
 
 	i = 0;
 	x = ft_strlen(s1);
-	while(s2[i] && n > 0)
+	while (s2[i] && n > 0)
 	{
 		s1[x + i] = s2[i];
 		i++;

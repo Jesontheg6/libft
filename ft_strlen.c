@@ -6,18 +6,18 @@
 /*   By: ljunzhen <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/23 23:50:02 by ljunzhen          #+#    #+#             */
-/*   Updated: 2018/04/24 16:35:46 by ljunzhen         ###   ########.fr       */
+/*   Updated: 2018/05/17 06:28:34 by ljunzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-int ft_strlen( char *str)
+int	ft_strlen(char *str)
 {
 	int i;
 
 	i = 0;
 	while (str[i] != '\0')
-			i++;
+		i++;
 	return (i);
 }

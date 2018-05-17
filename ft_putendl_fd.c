@@ -6,7 +6,7 @@
 /*   By: ljunzhen <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/07 07:14:02 by ljunzhen          #+#    #+#             */
-/*   Updated: 2018/05/07 07:19:04 by ljunzhen         ###   ########.fr       */
+/*   Updated: 2018/05/17 05:46:03 by ljunzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,6 @@
 
 void	ft_putendl_ft(char const *s, int fd)
 {
-	ft_putstr_fd( s, fd);
-	ft_putchar-fd('\n', fd);
+	ft_putstr_fd(s, fd);
+	ft_putchar_fd('\n', fd);
 }

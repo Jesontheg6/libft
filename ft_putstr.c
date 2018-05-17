@@ -6,18 +6,18 @@
 /*   By: ljunzhen <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/23 22:53:40 by ljunzhen          #+#    #+#             */
-/*   Updated: 2018/04/23 22:58:20 by ljunzhen         ###   ########.fr       */
+/*   Updated: 2018/05/17 05:56:55 by ljunzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putchar( char c)
+void	ft_putchar(char c)
 {
-	write( 1 , &c, 1);
+	write(1, &c, 1);
 }
 
-void	 ft_putstr(char *str)
+void	ft_putstr(char *str)
 {
 	int i;
 

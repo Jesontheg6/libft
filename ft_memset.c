@@ -6,21 +6,21 @@
 /*   By: ljunzhen <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/24 03:13:03 by ljunzhen          #+#    #+#             */
-/*   Updated: 2018/04/24 03:25:41 by ljunzhen         ###   ########.fr       */
+/*   Updated: 2018/05/17 05:34:40 by ljunzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void  *ft_memset(void *s, int c, size_t n)
+void	*ft_memset(void *s, int c, size_t n)
 {
-  size_t  i;
-  char *s2;
-  
-  i = 0;
-  s2 = s;
-  while (i < n)
-  {
-    s2[i] = c;
-    i++;
-  }
-  return (&s2);
+	size_t	i;
+	char	*s2;
+
+	i = 0;
+	s2 = s;
+	while (i < n)
+	{
+		s2[i] = c;
+		i++;
+	}
+	return (&s2);
 }

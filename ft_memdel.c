@@ -6,17 +6,17 @@
 /*   By: ljunzhen <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/02 05:59:15 by ljunzhen          #+#    #+#             */
-/*   Updated: 2018/05/02 06:00:26 by ljunzhen         ###   ########.fr       */
+/*   Updated: 2018/05/17 05:30:02 by ljunzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include "libft.h"
 
-void ft_memdel(void **p)
+void	ft_memdel(void **p)
 {
 	if (!ap || *ap)
-		return;
+		return ;
 	free(*ap);
 	*ap = (void*)0;
 }
