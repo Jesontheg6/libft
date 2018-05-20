@@ -6,13 +6,13 @@
 /*   By: ljunzhen <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/07 01:47:45 by ljunzhen          #+#    #+#             */
-/*   Updated: 2018/05/20 07:36:14 by ljunzhen         ###   ########.fr       */
+/*   Updated: 2018/05/20 08:08:01 by ljunzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int			ft_strsplit(const char *s, char c)
+static int	ft_cntwrd(char const *s, char c)
 {
 	unsigned int	i;
 	int				cntr;
@@ -41,4 +41,33 @@ static char	*ft_strndup(const char *s, size_t n)
 	str = ft_strncpy(str, s, n);
 	str[n] = '\0';
 	return (str);
+}
+
+char		*ft_strsplit(char const *s, char c)
+{
+	int		i;
+	int		j;
+	int		l;
+	char	**tab;
+
+	i = 0;
+	k = 0;
+	tab = (char **)malloc(sizeof(char *) * (ft_cntwrd(s, c)) + 1);
+	if (tab == NULL)
+		return (NULL);
+	while (s[i])
+	{
+		while (s[i] == c)
+			i++;
+		j = i;
+		while (s[i] && s[i] != c)
+			i++;
+		if (i > j)
+		{
+			tab[k] = ft_strndup(s + j, i - j);
+			k++;
+		}
+	}
+	tab[k] = NULL;
+	return (tab);
 }
