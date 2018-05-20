@@ -6,7 +6,7 @@
 /*   By: ljunzhen <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/07 05:34:14 by ljunzhen          #+#    #+#             */
-/*   Updated: 2018/05/17 04:35:21 by ljunzhen         ###   ########.fr       */
+/*   Updated: 2018/05/20 07:11:52 by ljunzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@ char	*ft_itoa(int n)
 	char *str;
 
 	if (!( str = (char *)malloc(sizeof(char)* 2)))
-		return(NULL);
-			if (n == -2147483648)
-				return ( ft_strcpy(str, "-2147483648"));
+		return (NULL);
+	if (n == -2147483648)
+		return (ft_strcpy(str, "-2147483648"));
 	if (n < 0)
 	{
 		str[0] = '-';

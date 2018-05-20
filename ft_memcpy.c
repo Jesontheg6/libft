@@ -6,7 +6,7 @@
 /*   By: ljunzhen <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/27 17:18:03 by ljunzhen          #+#    #+#             */
-/*   Updated: 2018/05/17 05:23:55 by ljunzhen         ###   ########.fr       */
+/*   Updated: 2018/05/20 07:45:10 by ljunzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 void	*memcpy(void *dest, const void *src, size_t n)
 {
-	size_t i;
-	char *d;
-	const char *s;
+	size_t		i;
+	char		*d;
+	const char	*s;
 
 	i = 0;
 	d = dest;

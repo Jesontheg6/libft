@@ -6,7 +6,7 @@
 /*   By: ljunzhen <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/27 22:27:43 by ljunzhen          #+#    #+#             */
-/*   Updated: 2018/05/17 05:08:05 by ljunzhen         ###   ########.fr       */
+/*   Updated: 2018/05/20 07:44:45 by ljunzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 void	*ft_memchr(const void *str, int c, size_t n)
 {
-	size_t	i;
+	size_t			i;
 	unsigned char	*s;
 
 	s = (unsigned char*)str;

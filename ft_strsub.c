@@ -6,7 +6,7 @@
 /*   By: ljunzhen <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/04 06:44:04 by ljunzhen          #+#    #+#             */
-/*   Updated: 2018/05/17 06:45:34 by ljunzhen         ###   ########.fr       */
+/*   Updated: 2018/05/20 07:47:02 by ljunzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strsub(char const *s, unsigned int start, size_t len)
 {
-	unsigned int i;
-	char	*str;
+	unsigned int	i;
+	char			*str;
 
 	i = 0;
 	str = (char *)malloc(sizeof(char) * len + 1);
