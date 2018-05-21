@@ -6,7 +6,7 @@
 /*   By: ljunzhen <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/10 08:20:23 by ljunzhen          #+#    #+#             */
-/*   Updated: 2018/05/20 08:37:20 by ljunzhen         ###   ########.fr       */
+/*   Updated: 2018/05/21 12:01:14 by ljunzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 
 int	ft_atoi(char *str)
 {
-	int res;
-	int sign;
-	int i;
+	long int res;
+	long int sign;
+	long int i;
 
 	res = 0;
 	sign = 0;

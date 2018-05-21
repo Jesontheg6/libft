@@ -6,7 +6,7 @@
 /*   By: ljunzhen <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/02 01:11:41 by ljunzhen          #+#    #+#             */
-/*   Updated: 2018/05/21 09:24:01 by ljunzhen         ###   ########.fr       */
+/*   Updated: 2018/05/21 11:04:59 by ljunzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strcat(char *s1, const char *s2)
 	int	i;
 	int	n;
 
-	n = strlen(s1);
+	n = ft_strlen(s1);
 	i = 0;
 	while (s2[i])
 		s1[n++] = s2[i++];

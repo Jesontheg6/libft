@@ -6,17 +6,18 @@
 /*   By: ljunzhen <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/10 04:31:15 by ljunzhen          #+#    #+#             */
-/*   Updated: 2018/05/17 04:38:07 by ljunzhen         ###   ########.fr       */
+/*   Updated: 2018/05/21 10:58:01 by ljunzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstadd(t_list **alst, t_list *new)
+void		ft_lstdelone(t_list **alst, void (*del)(void *, size_t))
 {
-	if (new != NULL)
+	if (del != NULL && alst != NULL)
 	{
-		new->next = *alst;
-		*alst = new;
+		del((**alst).content, (**alst).content_size);
+		free(*alst);
+		*alst = NULL;
 	}
 }

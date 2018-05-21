@@ -6,7 +6,7 @@
 #    By: ljunzhen <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/05/12 00:29:38 by ljunzhen          #+#    #+#              #
-#    Updated: 2018/05/21 06:28:20 by ljunzhen         ###   ########.fr        #
+#    Updated: 2018/05/21 11:30:31 by ljunzhen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -96,5 +96,7 @@ fclean: clean
 	@echo "$(NAME) deleted"
 
 re: fclean all
+	@ar rc $(NAME) $(OBJ)
+	@ranlib $(NAME)
 
 .PHONY: all, clean, fclean, re
