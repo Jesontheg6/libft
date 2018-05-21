@@ -6,7 +6,7 @@
 /*   By: ljunzhen <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/07 01:47:45 by ljunzhen          #+#    #+#             */
-/*   Updated: 2018/05/20 08:08:01 by ljunzhen         ###   ########.fr       */
+/*   Updated: 2018/05/21 10:14:54 by ljunzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,11 +43,11 @@ static char	*ft_strndup(const char *s, size_t n)
 	return (str);
 }
 
-char		*ft_strsplit(char const *s, char c)
+char		**ft_strsplit(char const *s, char c)
 {
 	int		i;
 	int		j;
-	int		l;
+	int		k;
 	char	**tab;
 
 	i = 0;

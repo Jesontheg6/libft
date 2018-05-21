@@ -6,11 +6,11 @@
 /*   By: ljunzhen <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/04 01:02:08 by ljunzhen          #+#    #+#             */
-/*   Updated: 2018/05/20 07:38:29 by ljunzhen         ###   ########.fr       */
+/*   Updated: 2018/05/21 09:24:15 by ljunzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft"
+#include "libft.h"
 
 void	ft_strclr(char *s)
 {

@@ -6,7 +6,7 @@
 /*   By: ljunzhen <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/07 00:28:08 by ljunzhen          #+#    #+#             */
-/*   Updated: 2018/05/20 08:12:50 by ljunzhen         ###   ########.fr       */
+/*   Updated: 2018/05/21 10:17:10 by ljunzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ char	*ft_strtrim(char const *s)
 	while (s[i] == ' ' || s[i] == '\n' || s[i] == '\t')
 		i++;
 	if (s[i] == '\0')
-		return (ft_strcspy(ft_memalloc(sizeof(char) * 2), ""));
+		return (ft_strcpy(ft_memalloc(sizeof(char) * 2), ""));
 	j = ft_strlen(s) - 1;
 	while (s[j] == ' ' || s[j] == '\n' || s[j] == '\t')
 		j--;

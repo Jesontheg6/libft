@@ -6,9 +6,12 @@
 /*   By: ljunzhen <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/02 01:11:41 by ljunzhen          #+#    #+#             */
-/*   Updated: 2018/05/02 01:11:46 by ljunzhen         ###   ########.fr       */
+/*   Updated: 2018/05/21 09:24:01 by ljunzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
+#include "string.h"
 
 char	*ft_strcat(char *s1, const char *s2)
 {
