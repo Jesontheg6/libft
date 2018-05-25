@@ -6,7 +6,7 @@
 /*   By: ljunzhen <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/07 01:47:45 by ljunzhen          #+#    #+#             */
-/*   Updated: 2018/05/21 10:14:54 by ljunzhen         ###   ########.fr       */
+/*   Updated: 2018/05/24 14:39:42 by ljunzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ static int	ft_cntwrd(char const *s, char c)
 
 	i = 0;
 	cntr = 0;
-	while (s[i])
+	while (s != '\0' && s[i])
 	{
 		while (s[i] == c)
 			i++;
@@ -55,7 +55,7 @@ char		**ft_strsplit(char const *s, char c)
 	tab = (char **)malloc(sizeof(char *) * (ft_cntwrd(s, c)) + 1);
 	if (tab == NULL)
 		return (NULL);
-	while (s[i])
+	while (s != '\0' && s[i])
 	{
 		while (s[i] == c)
 			i++;
