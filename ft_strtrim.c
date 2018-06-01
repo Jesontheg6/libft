@@ -6,7 +6,7 @@
 /*   By: ljunzhen <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/07 00:28:08 by ljunzhen          #+#    #+#             */
-/*   Updated: 2018/05/31 15:20:34 by ljunzhen         ###   ########.fr       */
+/*   Updated: 2018/05/31 18:28:43 by ljunzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,8 +35,7 @@ char	*ft_strtrim(char const *s)
 		return (0);
 	while (k < j - i + 1)
 	{
-		str[k] = s[i + k];
-		k++;
+		str[k++] = s[i + k];
 	}
 	str[k] = '\0';
 	return (str);
