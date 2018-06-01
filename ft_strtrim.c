@@ -6,7 +6,7 @@
 /*   By: ljunzhen <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/07 00:28:08 by ljunzhen          #+#    #+#             */
-/*   Updated: 2018/05/31 18:28:43 by ljunzhen         ###   ########.fr       */
+/*   Updated: 2018/06/01 15:25:03 by ljunzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,12 +31,10 @@ char	*ft_strtrim(char const *s)
 	while (s[j] == ' ' || s[j] == '\n' || s[j] == '\t')
 		j--;
 	str = (char *)malloc(sizeof(char) * (j - i + 2));
-	if (str == '\0')
+	if (str == NULL)
 		return (0);
-	while (k < j - i + 1)
-	{
-		str[k++] = s[i + k];
-	}
-	str[k] = '\0';
+	while (++k - 1 < j - i + 1)
+		str[k - 1] = s[i + k - 1];
+	str[k - 1] = '\0';
 	return (str);
 }
