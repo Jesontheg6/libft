@@ -6,7 +6,7 @@
 /*   By: ljunzhen <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/25 14:46:41 by ljunzhen          #+#    #+#             */
-/*   Updated: 2018/05/25 14:46:55 by ljunzhen         ###   ########.fr       */
+/*   Updated: 2018/05/31 14:39:14 by ljunzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,18 @@
 
 int	ft_strequ(char const *s1, char const *s2)
 {
-	return (ft_strcmp(s1, s2) == 0 ? 1 : 0);
+	int	i;
+
+	if (s1 == NULL || s2 == NULL)
+		return (0);
+	i = 0;
+	if (ft_strlen(s1) != ft_strlen(s2))
+		return (0);
+	while (s1[i] )
+	{
+		i++;
+		if (s1[i] != s2[i])
+			return (0);
+	}
+	return (1);
 }
